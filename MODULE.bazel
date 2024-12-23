@@ -1,0 +1,4 @@
+module(
+    name = "com_github_bcsgh_graphviz",
+    version = "0.0.1",
+)
