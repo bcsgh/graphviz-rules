@@ -25,7 +25,18 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
-"""Bazle/skylark rule(s) to process GraphViz."""
+"""
+# Bazle/skylark rule(s) to process GraphViz.
+
+## `MODULE.bazel`
+
+```
+bazel_dep(
+    name = "com_github_bcsgh_graphviz",
+    version = ...,
+)
+```
+"""
 
 def _gen_dot_impl(ctx):
     out = ctx.actions.declare_file(ctx.outputs.out.basename)
